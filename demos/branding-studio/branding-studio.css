@@ -7,7 +7,7 @@
 :root {      
     --alt-font: "Archivo", sans-serif; 
     --primary-font: "Archivo", sans-serif;
-    --base-color:#FF6036;
+    --base-color:#fac01e;
     --dark-gray: #151515;
     --medium-gray:#626262;
 }
@@ -95,7 +95,7 @@ h1, .h1 {
     background-color: #fff6f3;
 }
 .bg-base-color-transparent {
-    background-color: rgba(255, 96, 54, .8);
+    background-color: #fac01e;
 }
 /* padding */
 .pb-190px {
@@ -253,5 +253,133 @@ footer ul li a {
     .fs-275 {
         font-size: 4rem;
         line-height: 4rem;
+    }
+}
+
+
+/* MS logo size */
+header .navbar-brand img {
+    max-height: 110px;
+}
+/* Mobile logo size */
+@media (max-width: 991px) {
+    .navbar-brand img {
+        max-height: 95px !important;
+    }
+}
+/* ===== Reduce Navbar Height ===== */
+
+/* remove header vertical padding */
+header .navbar {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    min-height: auto !important;
+}
+
+/* remove logo container padding */
+header .navbar-brand {
+    padding-top: 15px !important;
+    padding-bottom: 5px !important;
+    margin: 0 !important;
+}
+
+/* align menu vertically center */
+header .navbar-nav .nav-link {
+    padding-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+/* remove extra space right side */
+header .header-button {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* remove gap between menu and dropdown */
+.navbar .dropdown-menu {
+    margin-top: 0 !important;
+    border-radius: 10px;
+}
+/* ===== Premium Dropdown Style ===== */
+
+.navbar .dropdown-menu {
+    padding: 10px 0;
+    min-width: 240px;
+    border: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: all .25s ease;
+}
+
+/* items */
+.navbar .dropdown-item {
+    padding: 10px 22px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #444;
+    transition: all .25s ease;
+}
+
+/* hover effect */
+.navbar .dropdown-item:hover {
+    background: #f5f7ff;
+    color: #000;
+    padding-left: 28px;
+}
+
+
+/* ===== Desktop dropdown only ===== */
+@media (min-width: 992px) {
+
+    .navbar .dropdown-menu {
+        padding: 10px 0;
+        min-width: 240px;
+        border: none;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        transform: translateY(10px);
+        opacity: 0;
+        visibility: hidden;
+        display: block;
+        transition: all .25s ease;
+    }
+
+    .navbar .dropdown:hover .dropdown-menu {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .navbar .dropdown-item {
+        padding: 10px 22px;
+        font-size: 15px;
+        font-weight: 500;
+        transition: all .25s ease;
+    }
+
+    .navbar .dropdown-item:hover {
+        background: #f5f7ff;
+        padding-left: 28px;
+    }
+}
+/* ===== Mobile dropdown fix ===== */
+@media (max-width: 991px) {
+
+    .navbar .dropdown-menu {
+        display: none;
+        position: relative !important;
+        transform: none !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        box-shadow: none !important;
+        background: transparent !important;
+        padding-left: 15px;
+    }
+
+    .navbar .dropdown.show .dropdown-menu {
+        display: block;
+    }
+
+    .navbar .dropdown-item {
+        padding: 8px 0;
+        color: #ccc;
     }
 }
