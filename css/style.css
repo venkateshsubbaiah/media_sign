@@ -7281,7 +7281,7 @@ header.sticky .navbar.disable-fixed {
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-.navbar .navbar-nav .dropdown .dropdown-menu li:last-child > a {
+.navbar .navbar-nav .dropdown .position-absolute li:last-child > a {
   padding-bottom: 0;
 }
 .navbar .navbar-nav .dropdown .dropdown-menu li.active > a {

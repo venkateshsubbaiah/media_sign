@@ -267,6 +267,9 @@ header .navbar-brand img {
         max-height: 95px !important;
     }
 }
+.bannerimg{
+    margin-left: -105px;
+}
 /* ===== Reduce Navbar Height ===== */
 
 /* remove header vertical padding */
