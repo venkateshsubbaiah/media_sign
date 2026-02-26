@@ -82,7 +82,7 @@
   }
   section {
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   section.half-section {
     padding-top: 40px;
@@ -10090,9 +10090,7 @@
   .lg-mb-45px {
     margin-bottom: 45px !important;
   }
-  .lg-mb-50px {
-    margin-bottom: 50px !important;
-  }
+  
   .lg-mb-55px {
     margin-bottom: 55px !important;
   }
