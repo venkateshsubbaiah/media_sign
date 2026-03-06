@@ -386,3 +386,32 @@ header .header-button {
         color: #ccc;
     }
 }
+/* GLASS MORPHISM NAVBAR */
+
+.glass-navbar{
+    position: fixed !important;
+    top:0;
+    width:100%;
+    z-index:9999;
+
+    background: rgba(255,255,255,0.25);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+/* menu text */
+.glass-navbar .nav-link{
+    color:#111;
+    font-weight:500;
+}
+
+.glass-navbar .nav-link:hover{
+    color:#000;
+}
+header{
+    position: sticky;
+    top:0;
+    z-index:9999;
+}
