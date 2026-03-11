@@ -423,3 +423,56 @@ header{
     padding-top:150px !important;
     padding-bottom:0 !important;
 }
+.py-03{
+    padding-top:150px !important;
+    padding-bottom:0 !important;
+}
+.py-04{
+    padding-top:150px !important;
+    padding-bottom:0 !important;
+}
+/* Footer Glass Cards */
+.glass-footer-card{
+    padding:25px;
+    border-radius:12px;
+
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    transition:all .3s ease;
+}
+
+/* Hover effect */
+.glass-footer-card:hover{
+    background: rgba(255,255,255,0.12);
+    transform: translateY(-3px);
+}
+footer .glass-footer-card{
+    margin-bottom:15px;
+}
+.glass-footer-card{
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+/* space between footer cards */
+footer .row{
+    gap:20px;
+}
+.footer-contact img{
+    max-height:50px;
+}
+
+.footer-contact p{
+    font-size:14px;
+    line-height:1.6;
+}
+.glass-footer-card{
+    padding:25px;
+}
