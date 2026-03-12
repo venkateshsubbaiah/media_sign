@@ -431,6 +431,10 @@ header{
     padding-top:150px !important;
     padding-bottom:0 !important;
 }
+.p-05{
+    padding-top:150px !important;
+    padding-bottom:0 !important;
+}
 /* Footer Glass Cards */
 .glass-footer-card{
     padding:25px;
@@ -475,4 +479,14 @@ footer .row{
 }
 .glass-footer-card{
     padding:25px;
+}
+/* Mouse parallax tilt */
+.tilt-card {
+    transform-style: preserve-3d;
+    transition: transform 0.2s ease;
+}
+
+.tilt-card img{
+    width:100%;
+    display:block;
 }
